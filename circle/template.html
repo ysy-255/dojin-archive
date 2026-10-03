@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example Circle</title>
+  <link rel="stylesheet" href="../common.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="site-title-block">
+        <h1 class="site-title">サークル名</h1>
+        <div class="site-subtitle">略称や短い説明をここに置く。（あれば）</div>
+      </div>
+      <a href="../">戻る</a>
+    </header>
+
+    <main class="main">
+      <nav class="tabs" aria-label="サークル情報" role="tablist">
+        <a id="tab-info" class="tab" href="#info" data-tab="info" role="tab" aria-controls="panel-info" aria-selected="false">INFO</a>
+        <a id="tab-artist" class="tab" href="#artist" data-tab="artist" role="tab" aria-controls="panel-artist" aria-selected="false">ARTISTS</a>
+        <a id="tab-work" class="tab" href="#work" data-tab="work" role="tab" aria-controls="panel-work" aria-selected="false">WORKS</a>
+        <a id="tab-event" class="tab" href="#event" data-tab="event" role="tab" aria-controls="panel-event" aria-selected="false">EVENTS</a>
+        <a id="tab-link" class="tab" href="#link" data-tab="link" role="tab" aria-controls="panel-link" aria-selected="false">LINKS</a>
+      </nav>
+
+      <section class="workspace">
+        <aside class="aux-panel" aria-label="補助情報">
+          <div class="aux-panel-inner"></div>
+        </aside>
+
+        <div class="content-panel">
+
+<!-- ここから編集 -->
+  <section id="info" class="tab-content" data-tab-panel="info" role="tabpanel" aria-labelledby="tab-info">
+    <p class="section-note">作成中…</p>
+  </section>
+
+  <section id="artist" class="tab-content" data-tab-panel="artist" role="tabpanel" aria-labelledby="tab-artist">
+    <p class="section-note">作成中…</p>
+  </section>
+
+  <section id="work" class="tab-content" data-tab-panel="work" role="tabpanel" aria-labelledby="tab-work">
+    <article class="entry" data-entry-id="CD-001" data-summary="CD-001 Sample Release" data-date="2001-02-03">
+      <h2 class="entry-summary--box">
+        <span class="title-group">
+          <span class="album-title">Sample Release</span>
+          <span class="album-subtitle">a beginning</span>
+        </span>
+        <span class="catalog-number">CD-001</span>
+      </h2>
+      <div class="entry-detail">
+        <div class="reference-links">
+        <dl>
+          <dt>アルバムページ</dt>
+            <dd>http://example.com/sample-release</dd>
+          <dt>ジャケット画像</dt>
+            <dd>http://example.com/sample-release/jacket.jpg</dd>
+        </dl>
+        </div>
+        <dl>
+          <dt>頒布開始日</dt><dd>2001-02-03</dd>
+          <dt>媒体</dt><dd>CD</dd>
+          <dt>価格</dt><dd>1000円</dd>
+        </dl>
+      </div>
+    </article>
+  </section>
+
+  <section id="event" class="tab-content" data-tab-panel="event" role="tabpanel" aria-labelledby="tab-event">
+    <article class="entry" data-entry-id="event-001" data-summary="2001-02-03 イベント略称" data-date="2001-02-03">
+      <h2 class="entry-summary">2001-02-03　Sample Event</h2>
+      <div class="entry-detail">
+        <dl>
+          <dt>スペース番号</dt><dd>あ-01a</dd>
+        </dl>
+        <p>頒布物</p>
+        <ul>
+          <li>CD-001 Sample Release, 1000円, 100部</li>
+        </ul>
+        <p>委託頒布物</p>
+        <ul>
+          <li>Another Circle, Sample Release 2</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section id="link" class="tab-content" data-tab-panel="link" role="tabpanel" aria-labelledby="tab-link">
+    <p class="section-note">公式サイト、参加者サイト、アーカイブ、関連資料などへのリンク。</p>
+
+    <article class="entry" data-entry-id="official">
+      <h2 class="entry-summary">公式サイト</h2>
+      <div class="entry-detail">
+        <dl>
+          <dt>Another Circle</dt>
+          <dd>http://example.com/</dd>
+        </dl>
+      </div>
+    </article>
+  </section>
+        </section>
+      </section>
+    </main>
+  </div>
+<!-- ここまで編集 -->
+
+  <script src="../common.js"></script>
+</body>
+</html>
